@@ -108,29 +108,97 @@ nav ul li a {
 
 /* Main Content Styles */
 
-main {
+main.home-main {
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: left;
   min-height: 80vh;
   margin: auto;
-  width: 70%;
+  width: 80%;
 }
 
-main section {
-  background-color: rgba(0, 0, 0, 0.37);
+main.home-main section {
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 50%;
+  max-width: 40vw;
 }
 
-main h1 {
+main.home-main h1 {
   color: var(--text-color);
   font-size: 60px;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
-main p {
+main.home-main p {
   color: var(--text-color);
   font-size: 18px;
   line-height: 1.6;
+  max-width: 400px;
+}
+
+/* about section styles */
+main.about-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  margin: auto;
+  width: 80%;
+}
+main.about-main section {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main.about-main h1 {
+  color: var(--text-color);
+  font-size: 60px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+main.about-main p {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+main section.team-section {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* fixed icon styles */
+
+.fixed-icons {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: var(--text-color);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.fixed-icons ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.fixed-icons svg {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  cursor: pointer;
 }
