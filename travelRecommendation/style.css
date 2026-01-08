@@ -1,7 +1,7 @@
 :root {
   --primary-color: #007bff;
   --secondary-bg: #f8f8f8;
-  --text-color: #333;
+  --text-color: #fbfbfb;
   --border-color: #ccc;
   --body-bg: #f4f4f4;
 }
@@ -10,6 +10,11 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
+  background-image: url(./img/img-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-color: var(--body-bg);
 }
 
@@ -32,13 +37,13 @@ header {
   margin: 20px 0;
   width: 20px;
   height: 20px;
-  color: var(--primary-color);
+  color: var(--text-color);
 }
 
 .title {
   font-size: 24px;
   font-weight: bold;
-  color: var(--primary-color);
+  color: var(--text-color);
   text-decoration: none;
 }
 
@@ -52,7 +57,7 @@ nav,
 nav {
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: var(--secondary-bg);
+  background-color: rgba(0, 0, 0, 0.302);
 }
 
 nav ul {
@@ -86,9 +91,10 @@ nav ul li a {
 .search-input input {
   border: none;
   background-color: transparent;
+  color: var(--text-color);
 }
-.search-input input:focus {
-  outline: none;
+.search-input input::placeholder {
+  color: var(--text-color);
 }
 .search-input button {
   border: none;
