@@ -202,3 +202,103 @@ main section.team-section {
   padding: 10px;
   cursor: pointer;
 }
+
+/* about team member card styles */
+.team-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  text-align: center;
+}
+.team-section .team-members {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+}
+
+.team-section h2 {
+  color: var(--text-color);
+  font-size: 20px;
+  margin: 10px 0 5px 0;
+}
+
+.team-member svg {
+  width: 50px;
+  height: 50px;
+  color: var(--text-color);
+}
+
+.team-member h3 {
+  color: var(--text-color);
+  font-size: 18px;
+  margin: 10px 0 5px 0;
+}
+
+/* contact section styles */
+
+main.contact-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  margin: auto;
+  width: 80%;
+}
+main.contact-main section {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main.contact-main form {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+}
+
+main.contact-main h1 {
+  color: var(--text-color);
+  font-size: 60px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+main.contact-main label {
+  color: var(--text-color);
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+main.contact-main input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+main.contact-main textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+main.contact-main button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
